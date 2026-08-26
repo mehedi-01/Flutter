@@ -29,7 +29,7 @@ void main() {
 
   String grade;
 
-  if (percentage >= 80) {
+  if (percentage >= 90) {
     grade = "A+";
   } else if (percentage >= 70) {
     grade = "A";
