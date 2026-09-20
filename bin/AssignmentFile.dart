@@ -111,13 +111,13 @@ void applianceExample() {
 // Main Function
 
 void main() {
-  print("===== BOOK =====");
+  print(" BOOK ");
   bookExample();
 
-  print("\n===== EMPLOYEE =====");
+  print("\n EMPLOYEE ");
   EmployeeExample();
 
-  print("\n===== APPLIANCE =====");
+  print("\n APPLIANCE ");
   applianceExample();
 }
 
