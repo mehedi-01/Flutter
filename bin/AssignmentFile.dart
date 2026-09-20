@@ -57,7 +57,7 @@ class Developer extends Employee{
   }
 }
 
-void EmployeeExample(){
+void employeeExample(){
   Manager m = Manager("Mehedi", 5000, "It");
   Developer d = Developer("Hasn", 3000, "Soft");
 
@@ -65,17 +65,15 @@ void EmployeeExample(){
   d.display();
 }
 
-// 3. Abstract Class
-
-abstract class Appliance {
+// Abstract Class
+abstract class Appliance{
   void turnOn();
   void turnOff();
 }
-
-class Fan extends Appliance {
+class Fan extends Appliance{
   @override
   void turnOn() {
-    print("Fan is running");
+    print("Fan is On");
   }
 
   @override
@@ -84,20 +82,22 @@ class Fan extends Appliance {
   }
 }
 
-class Light extends Appliance {
-  @override
-  void turnOn() {
-    print("Light is on");
-  }
 
+class Light extends Appliance{
   @override
-  void turnOff() {
-    print("Light is off");
-  }
+  void  turnOn()
+  {
+    print('Light is On');
+ }
+ @override
+  void turnOff(){
+   print('Light is Off');
+ }
+
 }
+void applinceExample(){
+  Fan fan  = Fan();
 
-void applianceExample() {
-  Fan fan = Fan();
   Light light = Light();
 
   fan.turnOn();
@@ -107,17 +107,14 @@ void applianceExample() {
   light.turnOff();
 }
 
-
-// Main Function
-
-void main() {
-  print(" BOOK ");
+void main(){
+  print('\nBook ');
   bookExample();
 
-  print("\n EMPLOYEE ");
-  EmployeeExample();
+  print('\nEmployee ');
+  employeeExample();
 
-  print("\n APPLIANCE ");
-  applianceExample();
+  print('\nAppliance');
+  applinceExample();
+
 }
-
